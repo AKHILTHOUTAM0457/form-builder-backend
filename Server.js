@@ -98,7 +98,7 @@ app.post("/api/forms/:id/share", async (req, res) => {
       return res.status(404).json({ error: "Form not found" });
     }
 
-    const formLink = `http://localhost:3000/form/${id}`;
+    const formLink = `https://form-builder-frontend-kappa.vercel.app/form/${id}`;
 
     res.status(200).json({ formLink });
   } catch (error) {
